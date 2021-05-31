@@ -1,0 +1,81 @@
+.acti{
+    font-size: 35pt;
+}
+
+/* 
+.car{
+    width: 25%;
+    height: 25%;
+    margin: 20pt;
+    flex-direction: row;
+}
+
+.cartext{
+    width: 75rem;
+    font-size: 14pt;
+    padding-top: 0;
+}
+
+.cartexthead{
+    width: 75rem;
+    font-size: 25pt;
+    color: black;
+    margin: 0;
+}
+
+.carpic{
+    height: 15%;
+    border: 5px solid #555;
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+.carhr{
+    margin-left: 60pt;
+} */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container :hover {
+	cursor: pointer;
+}
+
+.container img {
+	filter: grayscale();
+	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+	transition: filter 0.4s ease-in-out;
+}
+
+.container:hover img {
+	filter: none;
+}
+
+.title {
+	font-family: "Dancing Script", cursive;
+	font-size: 3rem;
+	color: black;
+	position: relative;
+}
+
+.title::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: #f55c47;
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
+}
+
+.container:hover .title::after {
+	width: 100%;
+	left: 0;
+}
